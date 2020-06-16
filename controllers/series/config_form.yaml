@@ -1,0 +1,27 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: webbook.blogtaxonomy::lang.form.series.label
+
+# Model Form Field configuration
+form: $/webbook/blogtaxonomy/models/series/fields.yaml
+
+# Model Class name
+modelClass: Webbook\BlogTaxonomy\Models\Series
+
+# Default redirect location
+defaultRedirect: webbook/blogtaxonomy/series
+
+# Create page
+create:
+    title: webbook.blogtaxonomy::lang.form.series.create_title
+    redirect: webbook/blogtaxonomy/series/update/:id
+    redirectClose: webbook/blogtaxonomy/series
+
+# Update page
+update:
+    title: webbook.blogtaxonomy::lang.form.series.edit_title
+    redirect: webbook/blogtaxonomy/series
+    redirectClose: webbook/blogtaxonomy/series

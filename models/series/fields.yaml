@@ -1,0 +1,63 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+    fields:
+        title:
+            tab: webbook.blogtaxonomy::lang.form.tabs.general
+            label: webbook.blogtaxonomy::lang.form.fields.title
+            placeholder: webbook.blogtaxonomy::lang.placeholders.title
+            span: left
+            required: true
+
+        slug:
+            tab: webbook.blogtaxonomy::lang.form.tabs.general
+            label: webbook.blogtaxonomy::lang.form.fields.slug
+            span: right
+            placeholder: webbook.blogtaxonomy::lang.placeholders.slug
+            required: true
+            preset:
+                field: title
+                type: slug
+
+        status:
+            tab: webbook.blogtaxonomy::lang.form.tabs.general
+            label: webbook.blogtaxonomy::lang.form.fields.status
+            type: balloon-selector
+            span: left
+            options:
+                active: Active
+                inactive: Inactive
+
+        tags:
+            label: webbook.blogtaxonomy::lang.form.tags.label
+            comment: webbook.blogtaxonomy::lang.form.tags.comment_series
+            mode: 'relation'
+            type: taglist
+            placeholder: webbook.blogtaxonomy::lang.placeholders.tags
+            tab: webbook.blogtaxonomy::lang.form.tabs.general
+
+        featured_images:
+            label: webbook.blogtaxonomy::lang.form.fields.images
+            type: fileupload
+            mode: image
+            tab: webbook.blogtaxonomy::lang.form.tabs.general
+
+        description:
+            label: webbook.blogtaxonomy::lang.form.fields.description
+            type: richeditor
+            size: large
+            tab: webbook.blogtaxonomy::lang.form.tabs.general
+
+        posts:
+            label: webbook.blogtaxonomy::lang.form.fields.posts
+            type: partial
+            path: field_posts
+            tab: webbook.blogtaxonomy::lang.form.tabs.posts
+
+        related_series:
+            label: webbook.blogtaxonomy::lang.form.fields.related_series
+            type: partial
+            path: related_series
+            tab: webbook.blogtaxonomy::lang.form.tabs.related_series

@@ -1,0 +1,27 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: webbook.blogtaxonomy::lang.form.tags.label
+
+# Model Form Field configuration
+form: $/webbook/blogtaxonomy/models/tag/fields.yaml
+
+# Model Class name
+modelClass: Webbook\BlogTaxonomy\Models\Tag
+
+# Default redirect location
+defaultRedirect: webbook/blogtaxonomy/tags
+
+# Create page
+create:
+  title: webbook.blogtaxonomy::lang.form.tags.create_title
+  redirect: webbook/blogtaxonomy/tags/update/:id
+  redirectClose: webbook/blogtaxonomy/tags
+
+# Update page
+update:
+  title: webbook.blogtaxonomy::lang.form.tags.edit_title
+  redirect: webbook/blogtaxonomy/tags
+  redirectClose: webbook/blogtaxonomy/tags
