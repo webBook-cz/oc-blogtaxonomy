@@ -8,6 +8,24 @@ return [
         'description' => 'Adds tags and series management for RainLab Blog posts',
     ],
 
+    'labels' => [
+        'authors' => 'Authors',
+        'name' => 'Name',
+        'surname' => 'Surname',
+        'mail' => 'E-mail',
+        'function' => 'Function',
+        'image' => 'Image',
+        'description' => 'Description',
+        'facebook' => 'Facebook',
+        'instagram' => 'Instagram',
+        'twitter' => 'Twitter',
+        'linkedin' => 'LinkedIn',
+        'created_at' => 'Created at',
+        'updated_at' => 'Updated at',
+        'author' => 'Patron',
+        'choose_author' => '--- Choose patrona',
+    ],
+
     // form
     'form' => [
         'errors' => [

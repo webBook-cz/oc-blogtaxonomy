@@ -1,0 +1,29 @@
+columns:
+    name:
+        label: 'webbook.blogtaxonomy::lang.labels.name'
+        type: text
+        searchable: true
+        sortable: true
+    surname:
+        label: 'webbook.blogtaxonomy::lang.labels.surname'
+        type: text
+        searchable: true
+        sortable: true
+    mail:
+        label: 'webbook.blogtaxonomy::lang.labels.mail'
+        type: text
+        searchable: true
+        sortable: true
+    function:
+        label: 'webbook.blogtaxonomy::lang.labels.function'
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: 'webbook.blogtaxonomy::lang.labels.created_at'
+        type: datetime
+        sortable: true
+    updated_at:
+        label: 'webbook.blogtaxonomy::lang.labels.updated_at'
+        type: datetime
+        sortable: true

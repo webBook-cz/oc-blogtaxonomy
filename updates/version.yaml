@@ -1,3 +1,11 @@
+2.3.2:
+    - 'Authors tables'
+    - builder_table_create_webbook_blogtaxonomy_authors.php
+
+2.3.1:
+    - 'Extend tables'
+    - extend_tables.php
+
 2.3.0:
   - Added status support for series
   - Added possibility to delete series from the series list page

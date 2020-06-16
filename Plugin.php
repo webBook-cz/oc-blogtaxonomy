@@ -4,8 +4,10 @@ namespace Webbook\BlogTaxonomy;
 
 use Event;
 use Backend;
+use Lang;
 use System\Classes\PluginBase;
 use Backend\Classes\Controller;
+use Webbook\BlogTaxonomy\Models\Author;
 use Webbook\BlogTaxonomy\Models\Tag;
 use Webbook\BlogTaxonomy\Models\Series;
 use Backend\Behaviors\RelationController;
@@ -96,6 +98,53 @@ class Plugin extends PluginBase
 
         // extend categories functionality
         $this->extendCategoriesController();
+
+        // Extend all backend form usage
+        Event::listen('backend.form.extendFields', function($widget) {
+
+            // Only for the User controller
+            if (!$widget->getController() instanceof \RainLab\Blog\Controllers\Posts) {
+                return;
+            }
+
+            // Only for the User model
+            if (!$widget->model instanceof \RainLab\Blog\Models\Post) {
+                return;
+            }
+
+            // Add an extra birthday field
+            $widget->addSecondaryTabFields([
+
+                'author' => [
+                    'label' => Lang::get('webbook.blogtaxonomy::lang.labels.author'),
+                    'span' => 'full',
+                    'tab' => 'webbook.blogtaxonomy::lang.navigation.taxonomy',
+                    'emptyOption' => Lang::get('webbook.blogtaxonomy::lang.labels.choose_author'),
+                    'select' => 'surname',
+                    'type' => 'relation',
+                ],
+            ]);
+        });
+
+        Event::listen('backend.menu.extendItems', function($manager) {
+            // Add side menu for custom fields  
+            $manager->addSideMenuItems('RainLab.Blog', 'blog', [
+                'authors' => [
+                'label' => Lang::get('webbook.blogtaxonomy::lang.labels.authors'),
+                'icon'  => 'icon-user',
+                'code'  => 'authors',
+                'owner' => 'RainLab.Blog',
+                'url'   => Backend::url('webbook/blogtaxonomy/authors'),
+                'permissions' => ['rainlab.blog.access_posts']
+                ]
+            ]);
+        });
+
+        \RainLab\Blog\Models\Post::extend(function($model) {
+            $model->belongsTo['author'] = [ 
+                Author::class, 
+            ];
+        });
     }
 
     /**

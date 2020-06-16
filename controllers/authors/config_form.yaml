@@ -1,0 +1,10 @@
+name: Authors
+form: $/webbook/blogtaxonomy/models/author/fields.yaml
+modelClass: Webbook\BlogTaxonomy\Models\Author
+defaultRedirect: webbook/blogtaxonomy/authors
+create:
+    redirect: 'webbook/blogtaxonomy/authors/update/:id'
+    redirectClose: webbook/blogtaxonomy/authors
+update:
+    redirect: webbook/blogtaxonomy/authors
+    redirectClose: webbook/blogtaxonomy/authors
