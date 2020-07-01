@@ -29,6 +29,13 @@ class Author extends Model
         'function' => 'required',
     ];
 
+    public $implement = ['@RainLab.Translate.Behaviors.TranslatableModel'];
+
+    public $translatable = [
+        'function',
+        'description',
+    ];
+
     public function getFullNameAttribute($value){
         return $value->name . ' ' . $value->surname;
     }
