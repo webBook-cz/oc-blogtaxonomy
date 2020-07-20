@@ -20,6 +20,31 @@ fields:
         size: large
         type: richeditor
 
+    claim:
+        label: Claim
+        span: full
+        type: text
+
+    description_fields:
+        type: repeater
+        label: webbook.blogextend::lang.description_fields.description_fields
+        form:
+            fields:
+                title:
+                    label: webbook.blogextend::lang.description_fields.title
+                    type: text
+                subtitle:
+                    label: webbook.blogextend::lang.description_fields.subtitle
+                    type: text
+                description:
+                    label: webbook.blogextend::lang.description_fields.description
+                    type: richeditor
+                    size: huge
+                image:
+                    label: webbook.blogextend::lang.description_fields.image
+                    type: mediafinder
+                    mode: image
+
     posts:
         label: webbook.blogtaxonomy::lang.form.fields.posts
         type: partial
