@@ -25,6 +25,7 @@ class Series extends ModelAbstract
 
     use Sluggable;
     use Validation;
+    use \October\Rain\Database\Traits\Sortable;
 
     const TABLE_NAME = 'webbook_blogtaxonomy_series';
 

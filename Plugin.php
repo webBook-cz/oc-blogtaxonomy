@@ -131,7 +131,7 @@ class Plugin extends PluginBase
                 ]
             ]);
         });
-        
+
         // Extend all backend form usage
         Event::listen('backend.form.extendFields', function($widget) {
 

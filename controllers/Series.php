@@ -26,12 +26,14 @@ class Series extends Controller
     public $implement = [
         FormController::class,
         ListController::class,
-        RelationController::class
+        RelationController::class,
+        'Backend.Behaviors.ReorderController',
     ];
 
     public $formConfig = 'config_form.yaml';
     public $listConfig = 'config_list.yaml';
     public $relationConfig = 'config_relation.yaml';
+    public $reorderConfig = 'config_reorder.yaml';
 
     /**
      * Series constructor

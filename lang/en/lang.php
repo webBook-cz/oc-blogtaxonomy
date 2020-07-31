@@ -26,11 +26,14 @@ return [
         'choose_author' => '--- Choose patrona',
     ],
 
+    'return_to_questions' => 'Return to series',
+
     // form
     'form' => [
         'errors' => [
             'unknown' => 'An unknown error has occurred'
         ],
+        'reorder' => 'Reorder records',
         'fields' => [
             'tag' => 'Tag',
             'title' => 'Title',
