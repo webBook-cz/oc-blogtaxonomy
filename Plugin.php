@@ -98,6 +98,40 @@ class Plugin extends PluginBase
         // extend categories functionality
         $this->extendCategoriesController();
 
+        // Extend all backend list usage
+        Event::listen('backend.list.extendColumns', function($widget) {
+
+            // Only for the User controller
+            if (!$widget->getController() instanceof \RainLab\Blog\Controllers\Posts) {
+                return;
+            }
+
+            // Only for the User model
+            if (!$widget->model instanceof \RainLab\Blog\Models\Post) {
+                return;
+            }
+
+            // Add an extra series column
+            $widget->addColumns([
+                'webbook_blogtaxonomy_series_id' => [
+                    'label' => 'Obor',
+                    'relation' => 'series',
+                    'select' => 'title',
+                ]
+            ]);
+        });
+
+        \RainLab\Blog\Controllers\Posts::extendListFilterScopes(function($filter) {
+            $filter->addScopes([
+                'series' => [
+                    'label' => 'Obory',
+                    'modelClass' => 'Webbook\BlogTaxonomy\Models\Series',
+                    'conditions' => 'id in (select id from rainlab_blog_posts where webbook_blogtaxonomy_series_id in (:filtered))',
+                    'nameFrom' => 'title',         
+                ]
+            ]);
+        });
+        
         // Extend all backend form usage
         Event::listen('backend.form.extendFields', function($widget) {
 
