@@ -1,4 +1,4 @@
-<?php namespace Webbook\BlogTaxonomy\Updates;
+<?php namespace WebBook\BlogTaxonomy\Updates;
 
 use Schema;
 use October\Rain\Database\Updates\Migration;

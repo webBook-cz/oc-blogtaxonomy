@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 
-namespace Webbook\BlogTaxonomy\Classes;
+namespace WebBook\BlogTaxonomy\Classes;
 
-use Webbook\BlogTaxonomy\Plugin;
+use WebBook\BlogTaxonomy\Plugin;
 use October\Rain\Database\Builder;
 
 /**
  * Class PostListFiltersTrait
  *
- * @package Webbook\BlogTaxonomy\Classes
+ * @package WebBook\BlogTaxonomy\Classes
  */
 trait PostListFiltersTrait
 {

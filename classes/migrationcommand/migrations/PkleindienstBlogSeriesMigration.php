@@ -1,6 +1,6 @@
 <?php
 
-namespace Webbook\BlogTaxonomy\Classes\MigrationCommand\Migrations;
+namespace WebBook\BlogTaxonomy\Classes\MigrationCommand\Migrations;
 
 use Exception;
 use Illuminate\Support\Facades\DB;
@@ -8,13 +8,13 @@ use October\Rain\Database\Collection;
 use October\Rain\Support\Facades\Schema;
 use October\Rain\Database\ModelException;
 use PKleindienst\BlogSeries\Models\Series;
-use Webbook\BlogTaxonomy\Models\Series as BlogTaxonomySeries;
-use Webbook\BlogTaxonomy\Classes\MigrationCommand\Exceptions\NoDataException;
+use WebBook\BlogTaxonomy\Models\Series as BlogTaxonomySeries;
+use WebBook\BlogTaxonomy\Classes\MigrationCommand\Exceptions\NoDataException;
 
 /**
  * Class PkleindienstBlogSeriesMigration
  *
- * @package Webbook\BlogTaxonomy\Classes\MigrationCommand\Migrations
+ * @package WebBook\BlogTaxonomy\Classes\MigrationCommand\Migrations
  */
 class PkleindienstBlogSeriesMigration extends AbstractMigration
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Webbook\BlogTaxonomy\Classes;
+namespace WebBook\BlogTaxonomy\Classes;
 
 /**
  * Trait TranslateArrayTrait
  *
- * @package Webbook\BlogTaxonomy\Classes
+ * @package WebBook\BlogTaxonomy\Classes
  */
 trait TranslateArrayTrait
 {

@@ -1,20 +1,20 @@
 <?php
 
-namespace Webbook\BlogTaxonomy\Controllers;
+namespace WebBook\BlogTaxonomy\Controllers;
 
 use Flash;
 use BackendMenu;
 use Backend\Classes\Controller;
-use Webbook\BlogTaxonomy\Plugin;
+use WebBook\BlogTaxonomy\Plugin;
 use Backend\Behaviors\FormController;
 use Backend\Behaviors\ListController;
 use Backend\Behaviors\RelationController;
-use Webbook\BlogTaxonomy\Models\Series as SeriesModel;
+use WebBook\BlogTaxonomy\Models\Series as SeriesModel;
 
 /**
  * Class Series
  *
- * @package Webbook\BlogTaxonomy\Controllers
+ * @package WebBook\BlogTaxonomy\Controllers
  */
 class Series extends Controller
 {

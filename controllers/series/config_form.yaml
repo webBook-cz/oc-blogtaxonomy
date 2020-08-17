@@ -9,7 +9,7 @@ name: webbook.blogtaxonomy::lang.form.series.label
 form: $/webbook/blogtaxonomy/models/series/fields.yaml
 
 # Model Class name
-modelClass: Webbook\BlogTaxonomy\Models\Series
+modelClass: WebBook\BlogTaxonomy\Models\Series
 
 # Default redirect location
 defaultRedirect: webbook/blogtaxonomy/series

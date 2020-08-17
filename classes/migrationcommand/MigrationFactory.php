@@ -1,16 +1,16 @@
 <?php
 
-namespace Webbook\BlogTaxonomy\Classes\MigrationCommand;
+namespace WebBook\BlogTaxonomy\Classes\MigrationCommand;
 
-use Webbook\BlogTaxonomy\Classes\MigrationCommand\Exceptions\NoPluginException;
-use Webbook\BlogTaxonomy\Classes\MigrationCommand\Migrations\NullMigration;
-use Webbook\BlogTaxonomy\Classes\MigrationCommand\Migrations\PkleindienstBlogSeriesMigration;
+use WebBook\BlogTaxonomy\Classes\MigrationCommand\Exceptions\NoPluginException;
+use WebBook\BlogTaxonomy\Classes\MigrationCommand\Migrations\NullMigration;
+use WebBook\BlogTaxonomy\Classes\MigrationCommand\Migrations\PkleindienstBlogSeriesMigration;
 use Illuminate\Console\Command;
 
 /**
  * Class MigrationFactory
  *
- * @package Webbook\BlogTaxonomy\Classes\MigrationCommand
+ * @package WebBook\BlogTaxonomy\Classes\MigrationCommand
  */
 class MigrationFactory
 {

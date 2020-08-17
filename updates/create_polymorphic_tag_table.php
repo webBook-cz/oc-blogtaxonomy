@@ -1,18 +1,18 @@
 <?php
 
-namespace Webbook\BlogTaxonomy\Updates;
+namespace WebBook\BlogTaxonomy\Updates;
 
 use Schema;
 use RainLab\Blog\Models\Post;
 use System\Classes\PluginManager;
 use Illuminate\Support\Facades\DB;
-use Webbook\BlogTaxonomy\Models\Tag;
+use WebBook\BlogTaxonomy\Models\Tag;
 use October\Rain\Database\Updates\Migration;
 
 /**
  * Class CreatePolymorphicTagTable
  *
- * @package Webbook\BlogTaxonomy\Updates
+ * @package WebBook\BlogTaxonomy\Updates
  */
 class CreatePolymorphicTagTable extends Migration
 {

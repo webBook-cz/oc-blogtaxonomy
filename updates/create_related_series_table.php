@@ -1,16 +1,16 @@
 <?php
 
-namespace Webbook\BlogTaxonomy\Updates;
+namespace WebBook\BlogTaxonomy\Updates;
 
 use Schema;
 use System\Classes\PluginManager;
-use Webbook\BlogTaxonomy\Models\Series;
+use WebBook\BlogTaxonomy\Models\Series;
 use October\Rain\Database\Updates\Migration;
 
 /**
  * Class CreateRelatedSeriesTable
  *
- * @package Webbook\BlogTaxonomy\Updates
+ * @package WebBook\BlogTaxonomy\Updates
  */
 class CreateRelatedSeriesTable extends Migration
 {

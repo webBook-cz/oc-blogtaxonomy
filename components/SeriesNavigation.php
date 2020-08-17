@@ -1,17 +1,17 @@
 <?php
 
-namespace Webbook\BlogTaxonomy\Components;
+namespace WebBook\BlogTaxonomy\Components;
 
 use Cms\Classes\Page;
-use Webbook\BlogTaxonomy\Plugin;
-use Webbook\BlogTaxonomy\Models\Series;
-use Webbook\BlogTaxonomy\Models\ModelAbstract;
-use Webbook\BlogTaxonomy\Classes\ComponentAbstract;
+use WebBook\BlogTaxonomy\Plugin;
+use WebBook\BlogTaxonomy\Models\Series;
+use WebBook\BlogTaxonomy\Models\ModelAbstract;
+use WebBook\BlogTaxonomy\Classes\ComponentAbstract;
 
 /**
  * Class SeriesNavigation
  *
- * @package Webbook\BlogTaxonomy\Components
+ * @package WebBook\BlogTaxonomy\Components
  */
 class SeriesNavigation extends ComponentAbstract
 {

@@ -1,16 +1,16 @@
 <?php
 
-namespace Webbook\BlogTaxonomy\Components;
+namespace WebBook\BlogTaxonomy\Components;
 
 use RainLab\Blog\Models\Post;
-use Webbook\BlogTaxonomy\Plugin;
-use Webbook\BlogTaxonomy\Models\Series;
-use Webbook\BlogTaxonomy\Classes\PostListAbstract;
+use WebBook\BlogTaxonomy\Plugin;
+use WebBook\BlogTaxonomy\Models\Series;
+use WebBook\BlogTaxonomy\Classes\PostListAbstract;
 
 /**
  * Class SeriesPosts
  *
- * @package Webbook\BlogTaxonomy\Components
+ * @package WebBook\BlogTaxonomy\Components
  */
 class SeriesPosts extends PostListAbstract
 {

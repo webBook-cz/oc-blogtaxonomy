@@ -1,11 +1,11 @@
 <?php
 
-namespace Webbook\BlogTaxonomy\Console;
+namespace WebBook\BlogTaxonomy\Console;
 
 use Exception;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputArgument;
-use Webbook\BlogTaxonomy\Classes\MigrationCommand\MigrationFactory;
+use WebBook\BlogTaxonomy\Classes\MigrationCommand\MigrationFactory;
 
 class MigrateFromPlugin extends Command
 {

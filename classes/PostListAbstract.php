@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace Webbook\BlogTaxonomy\Classes;
+namespace WebBook\BlogTaxonomy\Classes;
 
 use Cms\Classes\Page;
 use Illuminate\Http\Response;
 use Rainlab\Blog\Models\Post;
-use Webbook\BlogTaxonomy\Plugin;
+use WebBook\BlogTaxonomy\Plugin;
 use October\Rain\Database\Builder;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Redirect;
@@ -14,7 +14,7 @@ use Illuminate\Database\Eloquent\Collection;
 /**
  * Class PostListAbstract
  *
- * @package Webbook\BlogTaxonomy\Classes
+ * @package WebBook\BlogTaxonomy\Classes
  */
 abstract class PostListAbstract extends ComponentAbstract
 {

@@ -9,7 +9,7 @@ title: Reorder Categories
 nameFrom: title
 
 # Model Class name
-modelClass: Webbook\BlogTaxonomy\Models\Series
+modelClass: WebBook\BlogTaxonomy\Models\Series
 
 # Toolbar widget configuration
 toolbar:

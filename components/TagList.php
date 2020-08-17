@@ -1,19 +1,19 @@
 <?php declare(strict_types=1);
 
-namespace Webbook\BlogTaxonomy\Components;
+namespace WebBook\BlogTaxonomy\Components;
 
 use Cms\Classes\Page;
-use Webbook\BlogTaxonomy\Plugin;
-use Webbook\BlogTaxonomy\Models\Tag;
+use WebBook\BlogTaxonomy\Plugin;
+use WebBook\BlogTaxonomy\Models\Tag;
 use October\Rain\Database\Collection;
-use Webbook\BlogTaxonomy\Classes\ComponentAbstract;
-use Webbook\BlogTaxonomy\Classes\TranslateArrayTrait;
-use Webbook\BlogTaxonomy\Classes\PostListFiltersTrait;
+use WebBook\BlogTaxonomy\Classes\ComponentAbstract;
+use WebBook\BlogTaxonomy\Classes\TranslateArrayTrait;
+use WebBook\BlogTaxonomy\Classes\PostListFiltersTrait;
 
 /**
  * Class TagList
  *
- * @package Webbook\BlogTaxonomy\Components
+ * @package WebBook\BlogTaxonomy\Components
  */
 class TagList extends ComponentAbstract
 {

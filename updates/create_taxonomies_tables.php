@@ -1,17 +1,17 @@
 <?php
 
-namespace Webbook\BlogTaxonomy\Updates;
+namespace WebBook\BlogTaxonomy\Updates;
 
-use Webbook\BlogTaxonomy\Models\Series;
+use WebBook\BlogTaxonomy\Models\Series;
 use Schema;
 use System\Classes\PluginManager;
-use Webbook\BlogTaxonomy\Models\Tag;
+use WebBook\BlogTaxonomy\Models\Tag;
 use October\Rain\Database\Updates\Migration;
 
 /**
  * Class CreateTaxonomiesTables
  *
- * @package Webbook\BlogTaxonomy\Updates
+ * @package WebBook\BlogTaxonomy\Updates
  */
 class CreateTaxonomiesTables extends Migration
 {

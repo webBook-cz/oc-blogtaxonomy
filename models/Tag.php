@@ -1,10 +1,10 @@
 <?php
 
-namespace Webbook\BlogTaxonomy\Models;
+namespace WebBook\BlogTaxonomy\Models;
 
 use Str;
 use RainLab\Blog\Models\Post;
-use Webbook\BlogTaxonomy\Plugin;
+use WebBook\BlogTaxonomy\Plugin;
 use October\Rain\Database\Builder;
 use October\Rain\Database\Traits\Sluggable;
 use October\Rain\Database\Traits\Validation;
@@ -18,7 +18,7 @@ use October\Rain\Database\Relations\MorphToMany;
  * @property int posts_count Post count of posts associated with the tag
  * @property int series_posts_count Post count of posts associated with the tag via the series
  *
- * @package Webbook\BlogTaxonomy\Models
+ * @package WebBook\BlogTaxonomy\Models
  */
 class Tag extends ModelAbstract
 {

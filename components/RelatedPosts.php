@@ -1,22 +1,22 @@
 <?php
 
-namespace Webbook\BlogTaxonomy\Components;
+namespace WebBook\BlogTaxonomy\Components;
 
 use DB;
 use Cms\Classes\Page;
 use RainLab\Blog\Models\Post;
-use Webbook\BlogTaxonomy\Plugin;
-use Webbook\BlogTaxonomy\Models\Tag;
+use WebBook\BlogTaxonomy\Plugin;
+use WebBook\BlogTaxonomy\Models\Tag;
 use October\Rain\Database\Collection;
-use Webbook\BlogTaxonomy\Models\ModelAbstract;
-use Webbook\BlogTaxonomy\Classes\PostListAbstract;
-use Webbook\BlogTaxonomy\Classes\ComponentAbstract;
-use Webbook\BlogTaxonomy\Classes\TranslateArrayTrait;
+use WebBook\BlogTaxonomy\Models\ModelAbstract;
+use WebBook\BlogTaxonomy\Classes\PostListAbstract;
+use WebBook\BlogTaxonomy\Classes\ComponentAbstract;
+use WebBook\BlogTaxonomy\Classes\TranslateArrayTrait;
 
 /**
  * Class RelatedPosts
  *
- * @package Webbook\BlogTaxonomy\Components
+ * @package WebBook\BlogTaxonomy\Components
  */
 class RelatedPosts extends ComponentAbstract
 {

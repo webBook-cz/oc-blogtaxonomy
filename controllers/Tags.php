@@ -1,20 +1,20 @@
 <?php
 
-namespace Webbook\BlogTaxonomy\Controllers;
+namespace WebBook\BlogTaxonomy\Controllers;
 
 use Backend\Behaviors\RelationController;
 use Flash;
 use BackendMenu;
 use Backend\Classes\Controller;
-use Webbook\BlogTaxonomy\Models\Tag;
-use Webbook\BlogTaxonomy\Plugin;
+use WebBook\BlogTaxonomy\Models\Tag;
+use WebBook\BlogTaxonomy\Plugin;
 use Backend\Behaviors\FormController;
 use Backend\Behaviors\ListController;
 
 /**
  * Class Tags
  *
- * @package Webbook\BlogTaxonomy\Controllers
+ * @package WebBook\BlogTaxonomy\Controllers
  */
 class Tags extends Controller
 {

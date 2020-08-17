@@ -1,13 +1,13 @@
 <?php
 
-namespace Webbook\BlogTaxonomy\Classes\MigrationCommand\Exceptions;
+namespace WebBook\BlogTaxonomy\Classes\MigrationCommand\Exceptions;
 
 use Exception;
 
 /**
  * Class NoDataException
  *
- * @package Webbook\BlogTaxonomy\Classes\MigrationCommand\Exceptions
+ * @package WebBook\BlogTaxonomy\Classes\MigrationCommand\Exceptions
  */
 class NoDataException extends Exception
 {

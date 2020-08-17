@@ -1,10 +1,10 @@
 <?php
 
-namespace Webbook\BlogTaxonomy\Models;
+namespace WebBook\BlogTaxonomy\Models;
 
 use System\Models\File;
 use RainLab\Blog\Models\Post;
-use Webbook\BlogTaxonomy\Plugin;
+use WebBook\BlogTaxonomy\Plugin;
 use October\Rain\Database\Builder;
 use October\Rain\Database\Traits\Sluggable;
 use October\Rain\Database\Traits\Validation;
@@ -16,7 +16,7 @@ use October\Rain\Database\Traits\Validation;
  * @property string slug
  * @property string description
  *
- * @package Webbook\BlogTaxonomy\Models
+ * @package WebBook\BlogTaxonomy\Models
  */
 class Series extends ModelAbstract
 {

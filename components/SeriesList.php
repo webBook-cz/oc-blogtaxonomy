@@ -1,18 +1,18 @@
 <?php declare(strict_types=1);
 
-namespace Webbook\BlogTaxonomy\Components;
+namespace WebBook\BlogTaxonomy\Components;
 
 use Cms\Classes\Page;
-use Webbook\BlogTaxonomy\Plugin;
-use Webbook\BlogTaxonomy\Models\Series;
-use Webbook\BlogTaxonomy\Classes\ComponentAbstract;
-use Webbook\BlogTaxonomy\Classes\TranslateArrayTrait;
-use Webbook\BlogTaxonomy\Classes\PostListFiltersTrait;
+use WebBook\BlogTaxonomy\Plugin;
+use WebBook\BlogTaxonomy\Models\Series;
+use WebBook\BlogTaxonomy\Classes\ComponentAbstract;
+use WebBook\BlogTaxonomy\Classes\TranslateArrayTrait;
+use WebBook\BlogTaxonomy\Classes\PostListFiltersTrait;
 
 /**
  * Class SeriesList
  *
- * @package Webbook\BlogTaxonomy\Components
+ * @package WebBook\BlogTaxonomy\Components
  */
 class SeriesList extends ComponentAbstract
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Webbook\BlogTaxonomy\Classes\MigrationCommand;
+namespace WebBook\BlogTaxonomy\Classes\MigrationCommand;
 
 /**
  * Class MigrationInterface
  *
- * @package Webbook\BlogTaxonomy\Classes\MigrationCommand
+ * @package WebBook\BlogTaxonomy\Classes\MigrationCommand
  */
 interface MigrationInterface
 {

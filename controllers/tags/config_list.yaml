@@ -6,7 +6,7 @@
 list: $/webbook/blogtaxonomy/models/tag/columns.yaml
 
 # Model Class name
-modelClass: Webbook\BlogTaxonomy\Models\Tag
+modelClass: WebBook\BlogTaxonomy\Models\Tag
 
 # List Title
 title: webbook.blogtaxonomy::lang.form.tags.list_title

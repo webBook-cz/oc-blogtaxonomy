@@ -1,16 +1,16 @@
 <?php
 
-namespace Webbook\BlogTaxonomy\Classes\MigrationCommand\Migrations;
+namespace WebBook\BlogTaxonomy\Classes\MigrationCommand\Migrations;
 
 use Illuminate\Console\Command;
 use System\Classes\PluginManager;
-use Webbook\BlogTaxonomy\Classes\MigrationCommand\MigrationInterface;
-use Webbook\BlogTaxonomy\Classes\MigrationCommand\Exceptions\NoPluginException;
+use WebBook\BlogTaxonomy\Classes\MigrationCommand\MigrationInterface;
+use WebBook\BlogTaxonomy\Classes\MigrationCommand\Exceptions\NoPluginException;
 
 /**
  * Class PkleindienstBlogSeriesMigration
  *
- * @package Webbook\BlogTaxonomy\Classes\MigrationCommand\Migrations
+ * @package WebBook\BlogTaxonomy\Classes\MigrationCommand\Migrations
  */
 abstract class AbstractMigration implements MigrationInterface
 {

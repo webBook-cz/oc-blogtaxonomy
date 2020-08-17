@@ -1,4 +1,4 @@
-<?php namespace Webbook\Authors\Updates;
+<?php namespace WebBook\Authors\Updates;
 
 use Schema;
 use October\Rain\Database\Updates\Migration;

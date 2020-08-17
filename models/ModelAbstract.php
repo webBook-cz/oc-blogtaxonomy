@@ -1,19 +1,19 @@
 <?php declare(strict_types=1);
 
-namespace Webbook\BlogTaxonomy\Models;
+namespace WebBook\BlogTaxonomy\Models;
 
 use Model;
 use Cms\Classes\Controller;
 use October\Rain\Database\Builder;
 use October\Rain\Database\Relations\HasMany;
-use Webbook\BlogTaxonomy\Classes\PostListFiltersTrait;
+use WebBook\BlogTaxonomy\Classes\PostListFiltersTrait;
 
 /**
  * Class ModelAbstract
  *
  * @property string $url
  *
- * @package Webbook\BlogTaxonomy\Models
+ * @package WebBook\BlogTaxonomy\Models
  */
 abstract class ModelAbstract extends Model
 {

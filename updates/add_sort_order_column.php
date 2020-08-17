@@ -1,15 +1,15 @@
 <?php
 
-namespace Webbook\BlogTaxonomy\Updates;
+namespace WebBook\BlogTaxonomy\Updates;
 
 use Schema;
-use Webbook\BlogTaxonomy\Models\Series;
+use WebBook\BlogTaxonomy\Models\Series;
 use October\Rain\Database\Updates\Migration;
 
 /**
  * Class AddStatusColumn
  *
- * @package Webbook\BlogTaxonomy\Updates
+ * @package WebBook\BlogTaxonomy\Updates
  */
 class AddSeriesStatusColumn extends Migration
 {

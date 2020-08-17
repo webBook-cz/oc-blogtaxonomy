@@ -1,6 +1,6 @@
 <?php
 
-namespace Webbook\BlogTaxonomy\Classes;
+namespace WebBook\BlogTaxonomy\Classes;
 
 use ArrayAccess;
 use Cms\Classes\Page;
@@ -14,7 +14,7 @@ use October\Rain\Database\Collection;
 /**
  * Class ComponentAbstract
  *
- * @package Webbook\BlogTaxonomy\Classes
+ * @package WebBook\BlogTaxonomy\Classes
  */
 abstract class ComponentAbstract extends ComponentBase
 {

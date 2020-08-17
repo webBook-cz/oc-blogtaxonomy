@@ -1,25 +1,25 @@
 <?php
 
-namespace Webbook\BlogTaxonomy;
+namespace WebBook\BlogTaxonomy;
 
 use Event;
 use Backend;
 use Lang;
 use System\Classes\PluginBase;
 use Backend\Classes\Controller;
-use Webbook\BlogTaxonomy\Models\Tag;
-use Webbook\BlogTaxonomy\Models\Series;
+use WebBook\BlogTaxonomy\Models\Tag;
+use WebBook\BlogTaxonomy\Models\Series;
 use Backend\Behaviors\RelationController;
 use RainLab\Blog\Models\Post as PostModel;
-use Webbook\BlogTaxonomy\Components\TagList;
-use Webbook\BlogTaxonomy\Components\TagPosts;
-use Webbook\BlogTaxonomy\Components\SeriesList;
-use Webbook\BlogTaxonomy\Components\SeriesPosts;
-use Webbook\BlogTaxonomy\Components\RelatedPosts;
-use Webbook\BlogTaxonomy\Components\RelatedSeries;
-use Webbook\BlogTaxonomy\Console\MigrateFromPlugin;
+use WebBook\BlogTaxonomy\Components\TagList;
+use WebBook\BlogTaxonomy\Components\TagPosts;
+use WebBook\BlogTaxonomy\Components\SeriesList;
+use WebBook\BlogTaxonomy\Components\SeriesPosts;
+use WebBook\BlogTaxonomy\Components\RelatedPosts;
+use WebBook\BlogTaxonomy\Components\RelatedSeries;
+use WebBook\BlogTaxonomy\Console\MigrateFromPlugin;
 use RainLab\Blog\Controllers\Posts as PostsController;
-use Webbook\BlogTaxonomy\Components\SeriesNavigation;
+use WebBook\BlogTaxonomy\Components\SeriesNavigation;
 use RainLab\Blog\Controllers\Categories as CategoriesController;
 
 /**
@@ -125,7 +125,7 @@ class Plugin extends PluginBase
             $filter->addScopes([
                 'series' => [
                     'label' => 'Obory',
-                    'modelClass' => 'Webbook\BlogTaxonomy\Models\Series',
+                    'modelClass' => 'WebBook\BlogTaxonomy\Models\Series',
                     'conditions' => 'id in (select id from rainlab_blog_posts where webbook_blogtaxonomy_series_id in (:filtered))',
                     'nameFrom' => 'title',         
                 ]

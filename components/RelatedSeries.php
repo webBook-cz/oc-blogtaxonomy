@@ -1,15 +1,15 @@
 <?php
 
-namespace Webbook\BlogTaxonomy\Components;
+namespace WebBook\BlogTaxonomy\Components;
 
-use Webbook\BlogTaxonomy\Plugin;
-use Webbook\BlogTaxonomy\Models\Series;
-use Webbook\BlogTaxonomy\Classes\TranslateArrayTrait;
+use WebBook\BlogTaxonomy\Plugin;
+use WebBook\BlogTaxonomy\Models\Series;
+use WebBook\BlogTaxonomy\Classes\TranslateArrayTrait;
 
 /**
  * Class RelatedSeries
  *
- * @package Webbook\BlogTaxonomy\Components
+ * @package WebBook\BlogTaxonomy\Components
  */
 class RelatedSeries extends SeriesList
 {

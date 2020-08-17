@@ -1,11 +1,11 @@
 <?php
 
-namespace Webbook\BlogTaxonomy\Classes\MigrationCommand\Migrations;
+namespace WebBook\BlogTaxonomy\Classes\MigrationCommand\Migrations;
 
 /**
  * Class NullMigration
  *
- * @package Webbook\BlogTaxonomy\Classes\MigrationCommand\Migrations
+ * @package WebBook\BlogTaxonomy\Classes\MigrationCommand\Migrations
  */
 class NullMigration extends AbstractMigration
 {
