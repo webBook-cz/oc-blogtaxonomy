@@ -2,12 +2,12 @@
   - Add sort_order column
   - add_sort_order_column.php
 1.0.2:
-  - Updates of taxonomy
+  - Updates of taxonomy  
+  - add_series_status_column.php
 1.0.0:
   - The initial release of Blog Taxonomy
   - create_taxonomies_tables.php
   - change_description_field.php 
   - create_related_series_table.php
   - create_polymorphic_tag_table.php
-  - add_series_status_column.php
   - extend_tables.php
