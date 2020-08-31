@@ -12,4 +12,3 @@
   - change_description_field.php 
   - create_related_series_table.php
   - create_polymorphic_tag_table.php
-  - extend_tables.php
