@@ -11,7 +11,7 @@ use October\Rain\Database\Updates\Migration;
  *
  * @package WebBook\BlogTaxonomy\Updates
  */
-class AddSeriesStatusColumn extends Migration
+class AddSeriesSortOrderColumn extends Migration
 {
     /**
      * Execute migrations
