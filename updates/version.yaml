@@ -1,6 +1,7 @@
+1.0.9:
+  - Debug
 1.0.8:
   - Extend tables
-  - extend_tables.php
 1.0.7:
   - Debug
 1.0.6:
@@ -15,6 +16,7 @@
 1.0.2:
   - Updates of taxonomy  
   - add_series_status_column.php
+  - extend_tables.php
 1.0.0:
   - The initial release of Blog Taxonomy
   - create_taxonomies_tables.php
