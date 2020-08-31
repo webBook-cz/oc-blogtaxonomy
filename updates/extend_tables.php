@@ -9,14 +9,14 @@ class ExtendTables extends Migration
     {
         Schema::table('rainlab_blog_posts', function($table) {
             $table->engine = 'InnoDB';    
-            $table->integer('author_id')->nullable();
+            $table->integer('webbook_blogtaxonomy_series_id')->nullable();
         });
     }
 
     public function down()
     {
         Schema::table('rainlab_blog_posts', function($table) {
-            $table->dropColumn('author_id');           
+            $table->dropColumn('webbook_blogtaxonomy_series_id');           
         });
     }
 
