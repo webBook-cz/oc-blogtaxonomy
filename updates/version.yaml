@@ -1,3 +1,5 @@
+1.0.4:
+  - Add cs lang file
 1.0.3:
   - Add sort_order column
   - add_sort_order_column.php
