@@ -269,6 +269,12 @@ class Plugin extends PluginBase
                     'placeholder' => self::LOCALIZATION_KEY . 'placeholders.series',
                     'emptyOption' => self::LOCALIZATION_KEY . 'placeholders.series'
                 ],
+                'hide_date' => [
+                    'label' => 'Skrýt datum publikování',
+                    'comment' => 'Datum publikování článku se nezobrazí uživateli',
+                    'type' => 'switch',
+                    'tab' => 'rainlab.blog::lang.post.tab_manage',
+                ],
             ]);
         });
     }
