@@ -1,3 +1,5 @@
+1.0.6:
+  - Add composer.json file
 1.0.5:
   - Extend tables
   - extend_tables_2.php

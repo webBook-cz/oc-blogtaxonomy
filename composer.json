@@ -1,0 +1,25 @@
+{
+    "name": "webbook/blogtaxonomy-plugin",
+    "type": "october-plugin",
+    "description": "Blog taxonomy plugin for October CMS",
+    "homepage": "https://octobercms.com/plugin/webbook-blogtaxonomy",
+    "keywords": ["october", "octobercms", "blogtaxonomy"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jiří Synáček",
+            "email": "jirka@kristian.cz",
+            "role": "Co-founder"
+        },
+        {
+            "name": "Martin Zbořil",
+            "email": "zborima14@gmail.com",
+            "role": "Co-founder"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "composer/installers": "~1.0"
+    },
+    "minimum-stability": "dev"
+}
