@@ -20,7 +20,7 @@ class AddSeriesSortOrderColumn extends Migration
     {
         if (Schema::hasTable(Series::TABLE_NAME)) {
             Schema::table(Series::TABLE_NAME, static function ($table) {
-                $table->integer('sort_order');
+                $table->integer('sort_order')->nullable();
             });
         }
     }
