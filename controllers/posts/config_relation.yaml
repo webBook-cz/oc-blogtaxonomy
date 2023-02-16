@@ -1,0 +1,13 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+relatedPosts:
+    label: webbook.blogtaxonomy::lang.form.fields.posts
+    view:
+        showSearch: true
+        list: $/webbook/blogtaxonomy/controllers/relatedposts/post_columns_view.yaml
+        toolbarButtons: add|remove
+    manage:
+        showSearch: true
+        list: $/webbook/blogtaxonomy/controllers/relatedposts/post_columns_manage.yaml

@@ -1,3 +1,6 @@
+1.0.8:
+    - 'Created table webbook_blogtaxonomy_related_posts'
+    - create_webbook_blogtaxonomy_related_posts.php
 1.0.7:
   - Edit composer.json file
 1.0.6:

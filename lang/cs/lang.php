@@ -51,7 +51,7 @@ return [
             'series' => 'Série',
             'related_series' => 'Související série'
         ],
-
+        'related_posts' => 'Související články',
         'categories' => [
             'no_posts_in_categories' => 'V této kategorii nejsou žádné články'
         ],

@@ -51,7 +51,7 @@ return [
             'series' => 'Series',
             'related_series' => 'Related Series'
         ],
-
+        'related_posts' => 'Related posts',
         'categories' => [
             'no_posts_in_categories' => 'There are no posts in this category'
         ],

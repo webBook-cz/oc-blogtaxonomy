@@ -207,6 +207,14 @@ class Plugin extends PluginBase
                 'tags' => [Tag::class, 'name' => Tag::PIVOT_COLUMN]
             ];
 
+            $model->belongsToMany['relatedPosts'] = [
+                PostModel::class,
+                'table' => 'webbook_blogtaxonomy_related_posts',
+                'order' => 'id',
+                'key' => 'post_id',
+                'otherKey' => 'related_post_id'
+            ];
+
             $model->belongsTo['series'] = [
                 Series::class,
                 'key' => Series::TABLE_NAME . "_id"
@@ -219,6 +227,23 @@ class Plugin extends PluginBase
      */
     private function extendPostsController()
     {
+        PostsController::extend(function (Controller $controller) {
+            if (!$controller->isClassExtendedWith(RelationController::class)) {
+                $controller->implement[] = RelationController::class;
+            }
+
+            $relationConfig = '$/' . self::DIRECTORY_KEY . '/controllers/posts/config_relation.yaml';
+
+            if (property_exists($controller, 'relationConfig')) {
+                $controller->relationConfig = $controller->mergeConfig(
+                    $controller->relationConfig,
+                    $relationConfig
+                );
+            } else {
+                $controller->addDynamicProperty('relationConfig', $relationConfig);
+            }
+        });
+        
         PostsController::extendFormFields(function ($form, $model) {
             if (!$model instanceof PostModel) {
                 return;
@@ -250,6 +275,13 @@ class Plugin extends PluginBase
 
             $form->addSecondaryTabFields([
                 'categories' => $categoriesConfig,
+                'related_posts' => [
+                    'label' => self::LOCALIZATION_KEY . 'form.related_posts',
+                    'path' => '~/plugins/webbook/blogtaxonomy/controllers/relatedposts/_field_relatedPosts.htm',
+                    'span' => 'full',
+                    'type' => 'partial',
+                    'tab' => $tab,
+                ],
                 'tags' => [
                     'label' => self::LOCALIZATION_KEY . 'form.tags.label',
                     'comment' => self::LOCALIZATION_KEY . 'form.tags.comment_post',

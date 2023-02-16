@@ -165,9 +165,45 @@ class RelatedPosts extends ComponentAbstract
 
         $post = $post->first();
 
-        if (!$post || (!$tagIds = $post->tags->lists('id'))) {
+        if (!$post) {
             return null;
         }
+
+        if ($post->relatedPosts->lists('id')) {
+            $query = Post::isPublished()
+                ->whereIn('id', $post->relatedPosts->lists('id'));
+    
+            if ($take = (int)$this->property('limit')) {
+                $query->take($take);
+            }
+    
+            $posts = $query->get();
+    
+            $this->setPostUrls($posts);
+    
+            return $posts;
+        }
+
+        if (!$post->tags->lists('id')) {
+            $categoryds = $post->categories->lists('id');
+
+            $query = Post::isPublished()
+                ->whereHas('categories', function ($tag) use ($categoryds) {
+                    $tag->whereIn('id', $categoryds);
+                })->inRandomOrder();
+    
+            if ($take = (int)$this->property('limit')) {
+                $query->take($take);
+            }
+    
+            $posts = $query->get();
+    
+            $this->setPostUrls($posts);
+    
+            return $posts;
+        }
+
+        $tagIds = $post->tags->lists('id');
 
         $query = Post::isPublished()
             ->where('id', '<>', $post->id)
@@ -185,6 +221,25 @@ class RelatedPosts extends ComponentAbstract
         $posts = $query->get();
 
         $this->setPostUrls($posts);
+
+        if (count($posts) == 0) {
+            $categoryds = $post->categories->lists('id');
+
+            $query = Post::isPublished()
+                ->whereHas('categories', function ($tag) use ($categoryds) {
+                    $tag->whereIn('id', $categoryds);
+                })->inRandomOrder();
+    
+            if ($take = (int)$this->property('limit')) {
+                $query->take($take);
+            }
+    
+            $posts = $query->get();
+    
+            $this->setPostUrls($posts);
+    
+            return $posts;
+        }
 
         return $posts;
     }
